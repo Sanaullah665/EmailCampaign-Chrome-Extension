@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Email Sender</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bulk Email Sender</h1>
+    <div id="file-upload">
+      <input type="file" id="file-input" accept=".xlsx, .xls">
+      <button onclick="handleFileSelect()">Upload Excel</button>
+    </div>
+    <textarea id="message-box" placeholder="Compose your message..."></textarea>
+    <div id="email-list"></div>
+    <button onclick="sendMessage()">Send Message</button>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Bulk Email Sender",
+    "version": "1.0",
+    "description": "Send emails to a list of recipients from an Excel sheet.",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline';"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["libs/xlsx.full.min.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
